@@ -1,6 +1,9 @@
 # VM-Web-Server-Configuration
 How to configure VM Web Server.
 
+**************** Install Apache Server ******************
+Link: https://www.liquidweb.com/kb/how-to-install-apache-on-centos-7
+Steps:
 1. sudo yum -y update
 2. sudo yum -y install httpd
 3. sudo firewall-cmd --permanent --add-port=80/tcp
@@ -10,11 +13,9 @@ How to configure VM Web Server.
 6. service httpd status // View Apache Server Status
 7. service httpd stop // Stop Apache Server
 8. sudo systemctl enable httpd // To Start at boot
+********************************************************
 
-Link: https://www.liquidweb.com/kb/how-to-install-apache-on-centos-7
-
-*******************************************************
-Install PHP 7.1
+******************** Install PHP 7.1 *******************
 Link: https://www.vultr.com/docs/how-to-install-php-7-x-on-centos-7
 Steps:
 1. sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
@@ -25,15 +26,15 @@ Steps:
 5. sudo systemctl restart httpd.service // restart apache server after installing php
 *******************************************************
 
-*******************************************************
-// install Latest git : https://stackoverflow.com/questions/21820715/how-to-install-latest-version-of-git-on-centos-6-x-7-x
+******************* Install Latest Git ***************************
+Link: https://stackoverflow.com/questions/21820715/how-to-install-latest-version-of-git-on-centos-6-x-7-x
 1. yum install http://opensource.wandisco.com/centos/6/git/x86_64/wandisco-git-release-6-1.noarch.rpm
 2. yum install git
 3. git --version //to check installed git version.
 *******************************************************
 
 ************** VMware NAT Port forwarding ****************
-Link: https://kb.vmware.com/s/article/1018809
+Link: https://kb.vmware.com/s/article/1018809 
 Video: https://www.youtube.com/watch?v=3ZHGSqvwSQw
 Steps: 
 1. In the Workstation toolbar, click Edit > Virtual Network Editor to open the virtual network editor.
